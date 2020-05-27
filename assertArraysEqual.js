@@ -11,16 +11,17 @@ const eqArrays = function(firstArray, secondArray) {
   return true;
 };
 
-const assertEqual = function(TEST) {
-  if (TEST === true) {
-    console.log("Array's are equal!");
+const assertArraysEqual = function(firstArray, secondArray) {
+  const eqArraysResult = eqArrays(firstArray, secondArray);
+  if (eqArraysResult === true) {
+    console.log(`✅ Arrays are equal!`);
   } else {
-    console.log("Array's are not equal!");
+    console.log(`🛑 Arrays are not equal! Expected value is ${secondArray}, and the result is ${firstArray}`);
   }
 };
 
-// TEST CODE
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3])); // => true
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"])); // => true
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3])); // => false
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1])); // => false
+// eqArraysResult CODE
+assertArraysEqual([1, 2, 3], [1, 2, 3]); // => true
+assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // => true
+assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => false
+assertArraysEqual([1, 2, 3], [3, 2, 1]); // => false
