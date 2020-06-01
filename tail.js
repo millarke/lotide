@@ -1,5 +1,3 @@
-
-
 const tail = function(arrayToTail) {
   let newArray = [];
   for (let i = 1; i < arrayToTail.length; i++) {
