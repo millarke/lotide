@@ -1,5 +1,7 @@
 const assert = require('chai').assert;
 const tail = require('../tail');
+// const tail = require('../index').tail;
+// const library = required('./index');
 
 describe("#tail", () => {
   it("ensures we get back the correct number of elements", () => {
