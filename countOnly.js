@@ -13,7 +13,6 @@ const countOnly = function(allItems, itemsToCount) {
         } else {
           results[person] = 1;
         }
-        // console.log(results)
       }
     }
   }

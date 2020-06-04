@@ -1,7 +1,6 @@
 const assert = require('chai').assert;
 const middle = require('../middle');
 
-
 describe("#middle", () => {
   it("returns [] for [1] because no middle", () => {
     assert.deepEqual(middle([1]), []);
